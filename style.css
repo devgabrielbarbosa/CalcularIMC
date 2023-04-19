@@ -1,20 +1,37 @@
 * {
   margin: 0 auto;
+  padding: 0px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  width: 605px;
 }
-body{
+
+body {
   background: #03152e;
+}
+
+.titulo {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+p,
+h2 {
+  margin: 10px;
+  text-align: center;
+  color: yellowgreen;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 #form {
   text-align: center;
   color: #ffff;
 }
-table{
+
+table {
+  text-align: center;
   margin-top: 1.5rem;
-  width: 600px;
+  width: 300px;
 }
 
 th,
@@ -25,24 +42,34 @@ td {
   padding: 10px;
 }
 
-#form p {
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form h1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 300px;
-  margin-bottom: 20px;
 }
 
 input {
   width: 300px;
   background: #fff;
-  border: 0.5 solid ;
+  border: 0.5 solid;
   padding: 12px 24px;
   border-radius: 8px;
   margin-top: 10px;
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 .botao-grupo {
-  width: 400px;
   display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .botaoLimpar,
@@ -54,24 +81,57 @@ input {
   padding: 16px 45px;
   font-size: 16px;
   text-align: center;
-  width: 300px; 
-  margin-top: 30px;
-}
-.botaoLimpar button:hover{
-  color: green;
-  cursor: pointer;
+  width: 300px;
 }
 
-h1,
-h2{
-  margin: 40px;
-  color: yellowgreen;
+.botaoCalcular:hover {
+  background: green;
+  color: white;
 }
-strong{
-  margin-left: 15px;
+
+.botaoLimpar:hover {
+  background: red;
+  color: white;
+}
+
+strong {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #resultado {
+  width: 200px;
   color: white;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 760px) {
+  table {
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 600px;
+  }
+
+  #form{
+    margin-top: 2rem;
+    display: flex;
+  }
+  input{
+    text-align: center;
+    width: 600px;
+    justify-content: center;
+  }
+  .botao-grupo{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+  }
+
+  .botaoCalcular,
+  .botaoLimpar{
+    width: 600px;
+  }
+  p{
+    margin-bottom: 4rem;
+  }
 }

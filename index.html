@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <title>Minha calculadora</title>
+  <title>Cálculo IMC</title>
 </head>
 <body>  
   <main>
     <section id="conteudo">
-      <h2>Calculo IMC</h2>
+      <h2 class="titulo">Cálculo do Índice de Massa Corporal</h2>
+
       <table>
         <thead>
           <tr>
@@ -48,6 +49,7 @@
           </tr>
         </tbody>
       </table>
+
       <div id="form">
         <input type="text" placeholder="Digite seu nome" id="nome">
         <input id="altura" placeholder="Digite sua altura" type="number" stap="0.01"/>
@@ -58,7 +60,7 @@
         <button onclick="calcularImc()" class="botaoCalcular" id="calcular">Cálcular IMC</button>
         <button onclick="remuveValue()" class="botaoLimpar" id="limpar" >Limpar</button>
       </div>
-      <h1>Seu resultado é: <strong id="resultado"></strong></h1>
+      <p>Seu resultado é:<br><strong id="resultado"></strong></p>
     </section>
   </main>
   
