@@ -82,6 +82,7 @@ input {
   font-size: 16px;
   text-align: center;
   width: 300px;
+  margin-bottom: 1.5rem;
 }
 
 .botaoCalcular:hover {
@@ -131,6 +132,7 @@ strong {
   .botaoLimpar{
     width: 600px;
   }
+  
   p{
     margin-bottom: 4rem;
   }
